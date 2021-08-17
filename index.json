@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/git",
+    "@semantic-release/github",
+    ["@semantic-release/exec", {
+      "publishCmd": "ansible-galaxy role import --token ${env.ANSIBLE_GALAXY_API_KEY} --branch ${options.branch} ${env.GITHUB_REPOSITORY.replace('/', ' ')}"
+    }]
+  ]
+}

@@ -1,0 +1,4 @@
+---
+extends:
+  - "@gliech/semantic-release-config-base"
+  - "@gliech/semantic-release-config-github-npm"

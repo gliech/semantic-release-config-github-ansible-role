@@ -1,0 +1,29 @@
+{
+  "name": "@gliech/semantic-release-config-github-ansible-role",
+  "version": "0.0.0-development",
+  "description": "semantic-release shareable configuration for ansible galaxy roles",
+  "repository": "github:gliech/semantic-release-config-github-ansible-role",
+  "author": "gliech",
+  "license": "BSD-4-Clause",
+  "main": "index.json",
+  "files": [
+    "index.json",
+    "CHANGELOG.md"
+  ],
+  "keywords": [],
+  "dependencies": {
+    "@semantic-release/changelog": "5",
+    "@semantic-release/git": "9"
+  },
+  "peerDependencies": {
+    "semantic-release": "17"
+  },
+  "devDependencies": {
+    "semantic-release": "17",
+    "@gliech/semantic-release-config-base": "1",
+    "@gliech/semantic-release-config-github-npm": "1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
