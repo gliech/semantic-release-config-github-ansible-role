@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.0.3...v1.0.4) (2021-08-21)
+
+
+### Bug Fixes
+
+* get current branch from envCi ([fc21871](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/fc218711a339922aafbc312559546a7d70923222))
+
 ## [1.0.3](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.0.2...v1.0.3) (2021-08-21)
 
 
