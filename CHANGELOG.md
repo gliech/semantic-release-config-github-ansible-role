@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.0.1...v1.0.2) (2021-08-21)
+
+
+### Bug Fixes
+
+* access env from another place ([50f7b9f](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/50f7b9fddc905ef09ff3b14717fa92f8198023f2))
+
 ## [1.0.1](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.0.0...v1.0.1) (2021-08-18)
 
 
