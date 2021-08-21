@@ -6,7 +6,7 @@
     "@semantic-release/git",
     "@semantic-release/github",
     ["@semantic-release/exec", {
-      "publishCmd": "ansible-galaxy role import --token ${process.env.ANSIBLE_GALAXY_API_KEY} --branch ${options.branch} ${process.env.GITHUB_REPOSITORY.replace('/', ' ')}"
+      "publishCmd": "ansible-galaxy role import --token ${process.env.ANSIBLE_GALAXY_API_KEY} --branch ${envCi.isPr ? envCi.prBranch : envCi.branch} ${process.env.GITHUB_REPOSITORY.replace('/', ' ')}"
     }]
   ]
 }
