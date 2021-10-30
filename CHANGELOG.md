@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.0.4...v1.0.5) (2021-10-30)
+
+
+### Dependency Updates
+
+* allow usage with semrel 18 ([6579283](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/6579283653be3eeeecbd47211b4d540243a82359))
+
 ## [1.0.4](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.0.3...v1.0.4) (2021-08-21)
 
 
