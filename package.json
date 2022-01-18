@@ -20,7 +20,7 @@
     "semantic-release": ">=17.2.3 <19.0.0"
   },
   "devDependencies": {
-    "semantic-release": "18.x",
+    "semantic-release": "19.x",
     "@gliech/semantic-release-config-base": "1.x",
     "@gliech/semantic-release-config-github-npm": "1.x"
   },
