@@ -1,3 +1,10 @@
+# [1.1.0-alpha.4](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.1.0-alpha.3...v1.1.0-alpha.4) (2023-07-15)
+
+
+### Features
+
+* **ci:** make tests optional ([a4b089f](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/a4b089fd90f126c82174a44116d71f424bbbeaee))
+
 # [1.1.0-alpha.3](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.1.0-alpha.2...v1.1.0-alpha.3) (2023-07-15)
 
 
