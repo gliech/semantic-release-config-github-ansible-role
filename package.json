@@ -25,12 +25,12 @@
     "extends": ["@gliech/semantic-release-config-github-npm"],
     "replacements": [
       {
-        "files": [".github/workflows/test_release.yml"],
+        "files": ["test_release.yml"],
         "from": "(?<=@gliech\\/semantic-release-config-github-ansible-role@)\\S+",
         "to": "${nextRelease.version}",
         "results": [
           {
-            "file": ".github/workflows/test_release.yml",
+            "file": "test_release.yml",
             "hasChanged": true,
             "numMatches": 1,
             "numReplacements": 1
@@ -39,6 +39,6 @@
         "countMatches": true
       }
     ],
-    "assets": ["CHANGELOG.md", ".github/workflows/test_release.yml"]
+    "assets": ["CHANGELOG.md", "test_release.yml"]
   }
 }
