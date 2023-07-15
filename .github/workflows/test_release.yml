@@ -1,6 +1,10 @@
 ---
 on:
   workflow_call:
+    inputs:
+      semrel_config_version:
+        default: "1.x"
+        required: false
     secrets:
       ANSIBLE_GALAXY_API_KEY:
         required: true
@@ -38,10 +42,10 @@ jobs:
 
       - name: Install npm packages
         run: npm install --global
-          @gliech/semantic-release-config-github-ansible-role@1.1.0-alpha.1
+          @gliech/semantic-release-config-github-ansible-role@${{ inputs.semrel_config_version }}
 
       - name: Create new release
-        run: npx semantic-release --dry-run --extends
+        run: npx semantic-release --extends
           @gliech/semantic-release-config-github-ansible-role
         env:
           GIT_AUTHOR_NAME: ${{ github.actor }}
