@@ -9,7 +9,7 @@ A shareable semantic-release config that publishes ansible roles to
 the role:
 
 | Name                     | Description                                                                                                       |                                        
-| ------------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| :----------------------: | ----------------------------------------------------------------------------------------------------------------- |
 | `ANSIBLE_GALAXY_API_KEY` | Ansible Galaxy API key that can be found at <https://galaxy.ansible.com/me/preferences>                           |
 | `GITHUB_REPOSITORY`      | Name of the role repository on GitHub in the form of `owner/repo` (automatically set in GitHub Actions Workflows) |
 
@@ -42,7 +42,7 @@ jobs:
 The reusable workflow also defines 3 optional inputs:
 
 | Name                     | Type    | Default | Description                                                                      |                                        
-| ------------------------ | :-----: | ------: | -------------------------------------------------------------------------------- |
+| :----------------------: | :-----: | :-----: | -------------------------------------------------------------------------------- |
 | `semrel_config_version`  | string  | `"1.x"` | Can be used to pin the version of the npm module used                            |
 | `syntax_checks`          | boolean | `true`  | Can be used to disable the yamllint and ansible-lint checks done by the workflow |
 | `molecule_test`          | boolean | `true`  | Can be used to disable the molecule test done by the workflow                    |
