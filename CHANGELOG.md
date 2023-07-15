@@ -1,3 +1,5 @@
+# [1.1.0-alpha.7](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.1.0-alpha.6...v1.1.0-alpha.7) (2023-07-15)
+
 # [1.1.0-alpha.6](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.1.0-alpha.5...v1.1.0-alpha.6) (2023-07-15)
 
 # [1.1.0-alpha.5](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.1.0-alpha.4...v1.1.0-alpha.5) (2023-07-15)
