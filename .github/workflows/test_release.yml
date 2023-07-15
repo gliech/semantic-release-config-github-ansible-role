@@ -4,6 +4,7 @@ on:
     inputs:
       semrel_config_version:
         default: "1.x"
+        type: string
         required: false
     secrets:
       ANSIBLE_GALAXY_API_KEY:
