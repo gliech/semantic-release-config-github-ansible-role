@@ -1,3 +1,10 @@
+# [1.1.0-alpha.5](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.1.0-alpha.4...v1.1.0-alpha.5) (2023-07-15)
+
+
+### Continuous Integration
+
+* **deps:** update action version ([4107fd3](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/4107fd309c691379601a707dfe4955719f790923))
+
 # [1.1.0-alpha.4](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.1.0-alpha.3...v1.1.0-alpha.4) (2023-07-15)
 
 
