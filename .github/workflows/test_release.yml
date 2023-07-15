@@ -2,6 +2,14 @@
 on:
   workflow_call:
     inputs:
+      syntax_checks:
+        default: true
+        type: boolean
+        required: false
+      molecule_test:
+        default: true
+        type: boolean
+        required: false
       semrel_config_version:
         default: "1.x"
         type: string
@@ -23,15 +31,19 @@ jobs:
           persist-credentials: false
 
       - name: Install python packages
+        if: inputs.syntax_checks || inputs.molecule_test
         run: pip install --no-input --requirement test_requirements.txt
 
       - name: YAML syntax check
+        if: inputs.syntax_checks
         run: yamllint --strict .
 
       - name: Ansible syntax check
+        if: inputs.syntax_checks
         run: ansible-lint
 
       - name: Full molecule test
+        if: inputs.molecule_test
         run: molecule test
         env:
           PY_COLORS: "1"
