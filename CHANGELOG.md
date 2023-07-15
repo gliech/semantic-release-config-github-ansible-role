@@ -1,3 +1,15 @@
+# [1.1.0-alpha.1](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.0.5...v1.1.0-alpha.1) (2023-07-15)
+
+
+### Features
+
+* **deps:** move deps for shared plugins to config-base ([419eeb7](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/419eeb7cacb7666e79cefa2a236a8c202b4e92bb))
+
+
+### Bug Fixes
+
+* **gh-actions:** link workflow ([b89fa8c](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/b89fa8c35d550de0647659512feb750d2c8661da))
+
 ## [1.0.5](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.0.4...v1.0.5) (2021-10-30)
 
 
