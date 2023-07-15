@@ -1,0 +1,68 @@
+---
+on:
+  workflow_call:
+    inputs:
+      syntax_checks:
+        default: true
+        type: boolean
+        required: false
+      molecule_test:
+        default: true
+        type: boolean
+        required: false
+      semrel_config_version:
+        default: "1.x"
+        type: string
+        required: false
+    secrets:
+      ANSIBLE_GALAXY_API_KEY:
+        required: true
+name: test & release
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install python
+        uses: actions/setup-python@v4
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Install python packages
+        if: inputs.syntax_checks || inputs.molecule_test
+        run: pip install --no-input --requirement test_requirements.txt
+
+      - name: YAML syntax check
+        if: inputs.syntax_checks
+        run: yamllint --strict .
+
+      - name: Ansible syntax check
+        if: inputs.syntax_checks
+        run: ansible-lint
+
+      - name: Full molecule test
+        if: inputs.molecule_test
+        run: molecule test
+        env:
+          PY_COLORS: "1"
+          ANSIBLE_FORCE_COLOR: "1"
+
+      - name: Install nodejs
+        uses: actions/setup-node@v3
+
+      - name: Install npm packages
+        run: npm install
+          @gliech/semantic-release-config-github-ansible-role@${{ inputs.semrel_config_version }}
+
+      - name: Create new release
+        run: npx semantic-release --extends
+          @gliech/semantic-release-config-github-ansible-role
+        env:
+          GIT_AUTHOR_NAME: ${{ github.actor }}
+          GIT_AUTHOR_EMAIL: ${{ github.actor }}@users.noreply.github.com
+          GIT_COMMITTER_NAME: ${{ github.actor }}
+          GIT_COMMITTER_EMAIL: ${{ github.actor }}@users.noreply.github.com
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANSIBLE_GALAXY_API_KEY: ${{ secrets.ANSIBLE_GALAXY_API_KEY }}
