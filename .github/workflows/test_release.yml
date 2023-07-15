@@ -53,11 +53,11 @@ jobs:
         uses: actions/setup-node@v3
 
       - name: Install npm packages
-        run: npm install --global
+        run: npm install
           @gliech/semantic-release-config-github-ansible-role@${{ inputs.semrel_config_version }}
 
       - name: Create new release
-        run: semantic-release --extends
+        run: npx semantic-release --extends
           @gliech/semantic-release-config-github-ansible-role
         env:
           GIT_AUTHOR_NAME: ${{ github.actor }}
