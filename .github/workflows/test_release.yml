@@ -23,10 +23,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
 
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
 
@@ -50,7 +50,7 @@ jobs:
           ANSIBLE_FORCE_COLOR: "1"
 
       - name: Install nodejs
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
 
       - name: Install npm packages
         run: npm install --global
