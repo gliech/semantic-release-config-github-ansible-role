@@ -41,7 +41,7 @@ jobs:
           @gliech/semantic-release-config-github-ansible-role@1.1.0-alpha.1
 
       - name: Create new release
-        run: npx semantic-release --extends
+        run: npx semantic-release --dry-run --extends
           @gliech/semantic-release-config-github-ansible-role
         env:
           GIT_AUTHOR_NAME: ${{ github.actor }}
