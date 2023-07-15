@@ -13,9 +13,39 @@ the role:
 | `ANSIBLE_GALAXY_API_KEY` | Ansible Galaxy API key that can be found at <https://galaxy.ansible.com/me/preferences>                           |
 | `GITHUB_REPOSITORY`      | Name of the role repository on GitHub in the form of `owner/repo` (automatically set in GitHub Actions Workflows) |
 
-This shareable configuration is meant to be used in conjunction with
-[@gliech/semantic-release-config-base][2] which serves as the source for most
-changes to the default options for plugins used here.
+This shareable configuration uses [@gliech/semantic-release-config-base][2],
+which serves as the source for most changes to the default options for plugins
+included here.
+
+## Usage
+
+As this module and [@gliech/semantic-release-config-base][2] contain all
+necessary modules as dependencies, you only have to install this module itself.
+
+In addition this repository provides a reusable GitHub Actions workflow that you
+can use in your `.github/workflows`. 
+
+```yaml
+---
+on:
+  push:
+name: main
+jobs:
+  release:
+    name: test & release
+    uses:
+      gliech/semantic-release-config-github-ansible-role/.github/workflows/test_release.yml@v1
+    secrets:
+      ANSIBLE_GALAXY_API_KEY: ${{ secrets.ANSIBLE_GALAXY_API_KEY }}
+```
+
+The reusable workflow also defines 3 optional inputs:
+
+| Name                     | Default |Description                                                                       |                                        
+|--------------------------|---------|----------------------------------------------------------------------------------|
+| `semrel_config_version`  | `"1.x"` | Can be used to pin the version of the npm module used                            |
+| `syntax_checks`          | `true`  | Can be used to disable the yamllint and ansible-lint checks done by the workflow |
+| `molecule_test`          | `true`  | Can be used to disable the molecule test done by the workflow                    |
 
 ## License
 
