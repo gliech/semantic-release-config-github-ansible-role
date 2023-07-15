@@ -1,3 +1,11 @@
+# [1.1.0-alpha.3](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.1.0-alpha.2...v1.1.0-alpha.3) (2023-07-15)
+
+
+### Continuous Integration
+
+* **feat:** allow to overwrite config version in reusable workflow ([774b227](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/774b227b5396b8072d6579ec0ac6917c1de0fde0))
+* **fix:** define input type ([2cae26f](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/2cae26fe3e4c019371708eb4b886873a61122947))
+
 # [1.1.0-alpha.2](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.1.0-alpha.1...v1.1.0-alpha.2) (2023-07-15)
 
 # [1.1.0-alpha.1](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.0.5...v1.1.0-alpha.1) (2023-07-15)
