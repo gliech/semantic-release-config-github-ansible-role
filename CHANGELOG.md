@@ -1,3 +1,28 @@
+# [1.1.0](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.0.5...v1.1.0) (2023-07-15)
+
+
+### Features
+
+* **ci:** make tests optional ([a4b089f](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/a4b089fd90f126c82174a44116d71f424bbbeaee))
+* **deps:** move deps for shared plugins to config-base ([419eeb7](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/419eeb7cacb7666e79cefa2a236a8c202b4e92bb))
+
+
+### Bug Fixes
+
+* **gh-actions:** link workflow ([b89fa8c](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/b89fa8c35d550de0647659512feb750d2c8661da))
+
+
+### Documentation
+
+* README update ([1acbefe](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/1acbefefcbef61dfae825a4a146f7432f5985dc8))
+
+
+### Continuous Integration
+
+* **deps:** update action version ([4107fd3](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/4107fd309c691379601a707dfe4955719f790923))
+* **feat:** allow to overwrite config version in reusable workflow ([774b227](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/774b227b5396b8072d6579ec0ac6917c1de0fde0))
+* **fix:** define input type ([2cae26f](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/2cae26fe3e4c019371708eb4b886873a61122947))
+
 # [1.1.0-alpha.6](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.1.0-alpha.5...v1.1.0-alpha.6) (2023-07-15)
 
 # [1.1.0-alpha.5](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.1.0-alpha.4...v1.1.0-alpha.5) (2023-07-15)
