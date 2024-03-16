@@ -20,7 +20,7 @@ included here.
 ## Usage
 
 As this module and [@gliech/semantic-release-config-base][2] contain all
-necessary modules as dependencies, you only have to install this module itself.
+necessary modules as dependencies, you only have to install the module itself.
 
 In addition this repository provides a reusable GitHub Actions workflow that you
 can use in your `.github/workflows`. 
