@@ -38,6 +38,13 @@ jobs:
         if: inputs.syntax_checks
         run: yamllint --strict .
 
+      - name: Install role dependencies for ansible-lint
+        if: inputs.syntax_checks
+        run: molecule dependency
+        env:
+          PY_COLORS: "1"
+          ANSIBLE_FORCE_COLOR: "1"
+
       - name: Ansible syntax check
         if: inputs.syntax_checks
         run: ansible-lint
