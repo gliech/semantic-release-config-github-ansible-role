@@ -1,3 +1,24 @@
+## [1.1.1](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.1.0...v1.1.1) (2024-09-01)
+
+
+### Styles
+
+* **docs:** md table alignment ([9ee6357](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/9ee6357b21aeb964afa680139f8e80074a8d83dd))
+
+
+### Continuous Integration
+
+* **deps:** bump actions/checkout from 3 to 4 ([1ed13c8](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/1ed13c8184df7ea30aa5d1016122cdae629a7f19))
+* **deps:** bump actions/setup-node from 3 to 4 ([05d27d7](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/05d27d7ef59f81d662c90ce90b394a832c7aa79c))
+* **deps:** bump actions/setup-python from 4 to 5 ([fdfdfea](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/fdfdfeae8fb42b787d86e02c4b6a1202a5b5f05f))
+* **fix:** install role dependencies beforehand so that ansible-lint does not throw a hissy fit ([6a34a6e](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/6a34a6e9bd7b8bea53760f7ca48606f4fa7c9af0))
+* **fix:** make setup-node action use a recent version of node.js ([07003d4](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/07003d4c74161b599d3e3556735bc21f99733293))
+
+
+### Dependency Updates
+
+* bump @gliech/semantic-release-config-base from 1.1.0 to 1.1.2 ([0dd7574](https://github.com/gliech/semantic-release-config-github-ansible-role/commit/0dd75741bdec617ba3421314b7bfb2f2f43f78be))
+
 # [1.1.0](https://github.com/gliech/semantic-release-config-github-ansible-role/compare/v1.0.5...v1.1.0) (2023-07-15)
 
 
