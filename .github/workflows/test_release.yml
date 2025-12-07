@@ -59,7 +59,7 @@ jobs:
       - name: Install nodejs
         uses: actions/setup-node@v4
         with:
-          node-version: 21
+          node-version: latest
 
       - name: Install npm packages
         run: npm install
